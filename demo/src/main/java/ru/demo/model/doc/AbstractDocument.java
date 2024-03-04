@@ -16,7 +16,7 @@ public abstract class AbstractDocument implements Document{
         if (e instanceof NoSuchFileException || e.getCause() instanceof NoSuchFileException) {
             throw new ServiceException(ErrorCodes.PATH_ELEMENT_DELETED, file.getName());
         } else {
-            log.error(String.format(ErrorCodes.GET_PAGES_ERROR.getMessage(), file.getName()));
+            log.error(String.format(ErrorCodes.GET_PAGES_ERROR.getMessage(), file.getName()), e);
             throw new ServiceException(ErrorCodes.GET_PAGES_ERROR, file.getName());
         }
     }

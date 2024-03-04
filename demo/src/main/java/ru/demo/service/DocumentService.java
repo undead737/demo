@@ -84,7 +84,7 @@ public class DocumentService {
                             pages.addAndGet(document.getPages(file));
                         } catch (ServiceException se) {
                             log.error(String.format(ErrorCodes.OPERATION_ERROR.getMessage(),
-                                    operation.getValue()), se);
+                                    operation.getValue()));
                             protocolRecords.add(se.getMessage());
                         }
                     }
@@ -97,7 +97,7 @@ public class DocumentService {
             documentsProcessResult.setPages(pages.get());
         } catch (ServiceException se) {
             log.error(String.format(ErrorCodes.OPERATION_ERROR.getMessage(),
-                    operation.getValue()), se);
+                    operation.getValue()));
             documentsProcessResult.getProtocolRecords().add(se.getMessage());
         }
 
