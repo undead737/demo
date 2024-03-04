@@ -47,7 +47,7 @@ class DocumentServiceTest {
         Assert.assertEquals(1, result.getProtocolRecords().size());
 
         String er_msg = String.format(ServiceException.INTERNAL_SERVER_ERROR,
-                String.format(GET_PAGES_ERROR.getMessage(), "test.pdf"), GET_PAGES_ERROR.getCode());
+                String.format(GET_PAGES_ERROR.getMessage(), "test3.pdf"), GET_PAGES_ERROR.getCode());
         Assert.assertEquals(er_msg, result.getProtocolRecords().get(0));
     }
 }

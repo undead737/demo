@@ -6,7 +6,7 @@
 ### Запуск приложения
 
 * Запустить класс ru.demo.DemoApplication или
-Собрать с профилем jar-generate, запустить jar (java -jar demo-0.0.1-SNAPSHOT.jar)
+Собрать demo-parent с профилем jar-generate, запустить jar (java -jar demo-0.0.1-SNAPSHOT.jar)
  <p></p>
 * К проекту подключен Swagger http://localhost:8080/swagger-ui/index.html#/
 <p></p>
